@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "utils/env/sanitizeEnvs.js"
   ],
   "exclude": ["node_modules"]
 }
