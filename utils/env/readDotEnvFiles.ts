@@ -4,7 +4,7 @@ import path from 'node:path';
 import readPreserveLocalSecrets from './readPreserveLocalSecrets';
 const envResolve = path.resolve('.env');
 const sampleResolve = path.resolve('.env.sample');
-const StableLineBreak = Buffer.from('/n');
+const StableLineBreak = Buffer.from('\n');
 export async function readDotEnvFiles(): Promise<null | Buffer> {
   if (!existsSync(envResolve)) {
     writeFileSync('/.env', '');
