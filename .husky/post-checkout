@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/h"
+npx tsx utils/env/sanitizeEnv.ts
