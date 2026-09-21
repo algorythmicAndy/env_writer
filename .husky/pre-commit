@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+. "$(dirname "$0")/_/husky.sh"
 if git rev-parse -q --verify MERGE_HEAD >/dev/null; then
   echo "Merge blocked for testing"
   exit 1
